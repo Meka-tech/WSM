@@ -36,16 +36,16 @@ export const NavLogo = styled.div`
   display: flex;
   justify-items: center;
   align-items: center;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   ${mobile({ marginLeft: "0px" })}
   ${tab({ marginLeft: "0px" })}
 `;
 export const Logo = styled.img`
-  width: 15vh;
+  width: 20px;
   height: auto;
   margin-bottom: 10%;
   transform: scale(2);
-  ${mobile({ transform: "scale(1)" })}
+  ${mobile({ transform: "scale(1.2)" })}
   ${tab({ transform: "scale(1.5)" })}
 `;
 export const MobileIcon = styled.div`

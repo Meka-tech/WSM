@@ -36,7 +36,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             <SidebarLink> About Us</SidebarLink>{" "}
           </Link>
           <Link
-            to="/sustainability"
+            to="/contact"
             style={{ textDecoration: "none" }}
             onClick={toggle}
           >

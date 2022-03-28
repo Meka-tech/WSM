@@ -5,6 +5,7 @@ import {
   NavLogo,
   NavbarContainer,
   Nav,
+  Logo,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -18,7 +19,7 @@ const Navbar = ({ toggle }) => {
       <NavbarContainer>
         <NavLogo>
           <Link to="/">
-            {/* <Logo className="logo" src={require("../Images/Logo.png")} /> */}
+            <Logo className="logo" src={require("../../Images/Logo.png")} />
           </Link>
         </NavLogo>
 
@@ -42,7 +43,10 @@ const Navbar = ({ toggle }) => {
             </Link>
           </NavItem>
           <NavItem>
-            <NavLinks> Contacts</NavLinks>{" "}
+            <Link to="/contact" style={{ textDecoration: "none" }}>
+              {" "}
+              <NavLinks> Contact Us </NavLinks>{" "}
+            </Link>
           </NavItem>
           {/* <NavItem>
             <Link to="/location" style={{ textDecoration: "none" }}>

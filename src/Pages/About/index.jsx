@@ -54,6 +54,7 @@ const AboutUs = () => {
   return (
     <div style={{ overflowX: "hidden" }}>
       <Navbar toggle={toggle} />
+      <Sidebar toggle={toggle} isOpen={isOpen} />
       <HeaderDiv>
         <Header>About Us</Header>
         <BreadCrumb>
@@ -64,7 +65,7 @@ const AboutUs = () => {
           <Crumb> / </Crumb> <Crumb> About Us</Crumb>
         </BreadCrumb>
       </HeaderDiv>
-      <Sidebar toggle={toggle} isOpen={isOpen} />
+
       <Tab />
       <Footer />
     </div>
