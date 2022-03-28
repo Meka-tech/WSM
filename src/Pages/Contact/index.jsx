@@ -67,20 +67,21 @@ const Item = styled.div`
   display: flex;
   margin: 20px 0px;
   align-items: center;
-  ${mobile({ margin: "10px 0px" })}
+  ${mobile({ margin: "5px 0px" })}
 `;
 
 const Icon = styled.div`
   margin-right: 10px;
   color: black;
-  ${mobile({ transform: "scale(0.6) ", marginRight: "3px" })}
+  ${mobile({ transform: "scale(0.6) ", marginRight: "0px" })}
 `;
 
 const Content = styled.p`
   font-size: 18px;
   color: black;
+  font-weight: bold;
   margin: 0;
-  ${mobile({ fontSize: "10px", marginLeft: "0px" })}
+  ${mobile({ fontSize: "10px" })}
 `;
 
 const Contact = () => {

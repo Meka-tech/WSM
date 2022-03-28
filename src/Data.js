@@ -1,6 +1,6 @@
-import Pic1 from "./Images/pictures2020/_DSC6750.JPG";
-import Pic2 from "./Images/pictures2020/_DSC6754.JPG";
-import Pic3 from "./Images/pictures2020/_DSC6724.JPG";
+import Pic1 from "./Images/_DSC6750.JPG";
+import Pic2 from "./Images/_DSC6754.JPG";
+import Pic3 from "./Images/_DSC6724.JPG";
 
 export const carouselItem = [
   {
