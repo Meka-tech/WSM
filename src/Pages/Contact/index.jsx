@@ -6,9 +6,6 @@ import styled from "styled-components";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import CallOutlinedIcon from "@mui/icons-material/CallOutlined";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
-import PermContactCalendarOutlinedIcon from "@mui/icons-material/PermContactCalendarOutlined";
-import EventNoteOutlinedIcon from "@mui/icons-material/EventNoteOutlined";
 import { Link } from "react-router-dom";
 import { mobile } from "../../responsive";
 
