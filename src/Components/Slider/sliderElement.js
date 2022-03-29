@@ -8,7 +8,7 @@ export const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  ${mobile({ height: "30vh" })}
+  ${mobile({ height: "40vh" })}
   ${tab({ height: "45vh" })}
 `;
 export const Arrow = styled.div`
@@ -55,7 +55,7 @@ export const Image = styled.img`
   height: 100%;
   min-width: 100%;
   object-fit: cover;
-  ${mobile({ height: "50%", maxWidth: "100vw" })}
+  ${mobile({ height: "100%", maxWidth: "100vw" })}
   ${tab({ height: "50%", minWidth: "100vw" })}
 `;
 

@@ -20,8 +20,8 @@ const Container = styled.div`
 `;
 const Image = styled.img`
   position: relative;
-  height: 700px;
-  width: 300px;
+  height: 500px;
+  width: 220px;
   border-radius: 20px;
   margin: 0;
   object-fit: cover;
@@ -52,7 +52,7 @@ const Description = styled.div`
     height: "100px",
     padding: "10px  0px",
     transform: "translateY(0px)",
-    marginTop: "-20px",
+    marginTop: "-50px",
   })}
 `;
 const Name = styled.h2`
@@ -60,11 +60,11 @@ const Name = styled.h2`
   font-size: 20px;
   font-weight: bolder;
   color: #00adb5;
-  ${mobile({ fontSize: "10px", marginBottom: "0px" })}
+  ${mobile({ fontSize: "12px", marginBottom: "0px" })}
 `;
 const Position = styled.h3`
   color: #152238;
-  ${mobile({ fontSize: "8px" })}
+  ${mobile({ fontSize: "10px" })}
 `;
 
 const ImageCard = (props) => {

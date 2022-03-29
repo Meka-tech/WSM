@@ -78,7 +78,7 @@ const AboutUs = () => {
         <ImageCard
           name="Mrs Gertrude Onyeji"
           position="Founder"
-          image={require("../../Images/_DSC6750.JPG")}
+          image={require("../../Images/mummy.jpg")}
         />
       </Team>
       <Footer />
