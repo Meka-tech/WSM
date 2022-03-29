@@ -6,6 +6,7 @@ import Tab from "../../Components/Tabs";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { mobile } from "../../responsive";
+import ImageCard from "../../Components/ImageCard";
 
 const HeaderDiv = styled.div`
   display: flex;
@@ -44,6 +45,12 @@ const Crumb = styled.p`
     color: #00adb5;
   }
 `;
+const Team = styled.div`
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+`;
 
 const AboutUs = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -67,6 +74,13 @@ const AboutUs = () => {
       </HeaderDiv>
 
       <Tab />
+      <Team>
+        <ImageCard
+          name="Mrs Gertrude Onyeji"
+          position="Founder"
+          image={require("../../Images/_DSC6750.JPG")}
+        />
+      </Team>
       <Footer />
     </div>
   );
