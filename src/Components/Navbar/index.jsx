@@ -34,7 +34,10 @@ const Navbar = ({ toggle }) => {
             </Link>
           </NavItem>
           <NavItem>
-            <NavLinks> Events </NavLinks>{" "}
+            <Link to="/events" style={{ textDecoration: "none" }}>
+              {" "}
+              <NavLinks> Events </NavLinks>{" "}
+            </Link>
           </NavItem>
           <NavItem>
             <Link to="/about_us" style={{ textDecoration: "none" }}>

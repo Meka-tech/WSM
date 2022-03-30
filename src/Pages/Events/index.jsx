@@ -2,11 +2,9 @@ import React, { useState } from "react";
 import Footer from "../../Components/Footer";
 import Navbar from "../../Components/Navbar";
 import Sidebar from "../../Components/Sidebar";
-import Tab from "../../Components/Tabs";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { mobile } from "../../responsive";
-import ImageCard from "../../Components/ImageCard";
 
 const HeaderDiv = styled.div`
   display: flex;
@@ -45,23 +43,8 @@ const Crumb = styled.p`
     color: #00adb5;
   }
 `;
-const Team = styled.div`
-  padding: 50px 0px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  ${mobile({ padding: "25px 0px" })}
-`;
-const Heading = styled.h1`
-  font-size: 30px;
-  color: #00adb5;
-  margin: 50px 0px;
-  ${mobile({ fontSize: "20px", margin: "25px 0px" })}
-`;
-
-const AboutUs = () => {
+const Events = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggle = () => {
@@ -72,27 +55,18 @@ const AboutUs = () => {
       <Navbar toggle={toggle} />
       <Sidebar toggle={toggle} isOpen={isOpen} />
       <HeaderDiv>
-        <Header>About Us</Header>
+        <Header>Events</Header>
         <BreadCrumb>
           <Link to="/" style={{ textDecoration: "none" }}>
             {" "}
             <Crumb>Home </Crumb>
           </Link>{" "}
-          <Crumb> / </Crumb> <Crumb> About Us</Crumb>
+          <Crumb> / </Crumb> <Crumb> Events</Crumb>
         </BreadCrumb>
       </HeaderDiv>
-
-      <Tab />
-      <Team>
-        <Heading>Meet Our Founder</Heading>
-        <ImageCard
-          name="Mrs Gertrude Onyeji"
-          position="Founder"
-          image={require("../../Images/mummy.jpg")}
-        />
-      </Team>
       <Footer />
     </div>
   );
 };
-export default AboutUs;
+
+export default Events;

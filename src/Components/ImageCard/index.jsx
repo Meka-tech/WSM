@@ -4,55 +4,47 @@ import { mobile } from "../../responsive";
 import { tab } from "../../responsive";
 
 const Container = styled.div`
-  width: 250px;
-  height: 350px;
+  position: relative;
+  width: 300px;
+  height: 400px;
   background-color: none;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  border-radius: 10px;
-  box-shadow: 2px 2px 5px gray;
-  ${mobile({ width: "100px", height: " 200px" })}
+  ${mobile({ width: "150px", height: " 250px" })}
   ${tab({ width: "100px", height: " 200px" })}
 `;
 const Image = styled.img`
   position: relative;
-  height: 500px;
-  width: 220px;
-  border-radius: 20px;
+  height: 100%;
+  width: 100%;
   margin: 0;
   object-fit: cover;
-  transition: all 0.5s ease-in-out;
-  &:hover {
-    transform: scale(1.05);
-  }
+  transition: all 0.2s ease-in-out;
 `;
 
 const Description = styled.div`
   margin: 0;
-  padding: 20px 0px;
-  position: relative;
-  width: 300px;
+  padding: 10px 5px;
+  position: absolute;
+  width: 85%;
   height: 200px;
-  margin-top: -100px;
-  box-shadow: 2px 2px 5px gray;
-
-  transform: translateY(80px);
+  margin-top: 100%;
+  transform: translateY(110px);
   background-color: #ffffff;
   transition: all 0.3s ease-in-out;
-  border-radius: 25px;
+  background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
   &:hover {
-    transform: translateY(40px);
+    transform: translateY(65px);
   }
   ${mobile({
     height: "100px",
     padding: "10px  0px",
-    transform: "translateY(0px)",
-    marginTop: "-50px",
+    transform: "translateY(60px)",
+    marginTop: "100%",
   })}
 `;
 const Name = styled.h2`
@@ -60,7 +52,7 @@ const Name = styled.h2`
   font-size: 20px;
   font-weight: bolder;
   color: #00adb5;
-  ${mobile({ fontSize: "12px", marginBottom: "0px" })}
+  ${mobile({ fontSize: "10px", marginBottom: "0px" })}
 `;
 const Position = styled.h3`
   color: #152238;

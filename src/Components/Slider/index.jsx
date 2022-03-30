@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
 
+import ArrowRightOutlinedIcon from "@mui/icons-material/ArrowRightOutlined";
+import ArrowLeftOutlinedIcon from "@mui/icons-material/ArrowLeftOutlined";
+
 import {
   Container,
   Wrapper,
   Slide,
   ImageContainer,
   InfoContainer,
+  Arrow,
   Image,
 } from "./sliderElement";
 import { carouselItem } from "../../Data";
@@ -29,9 +33,9 @@ const Slider = () => {
 
   return (
     <Container>
-      {/* <Arrow direction="left" onClick={() => handleClick("left")}>
+      <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlinedIcon />
-      </Arrow> */}
+      </Arrow>
       <Wrapper slideIndex={slideIndex}>
         {carouselItem.map((item) => (
           <Slide key={item.id}>
@@ -46,9 +50,9 @@ const Slider = () => {
           </Slide>
         ))}
       </Wrapper>
-      {/* <Arrow direction="right" onClick={() => handleClick("right")}>
+      <Arrow direction="right" onClick={() => handleClick("right")}>
         <ArrowRightOutlinedIcon />
-      </Arrow> */}
+      </Arrow>
     </Container>
   );
 };
