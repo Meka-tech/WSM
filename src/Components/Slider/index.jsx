@@ -13,7 +13,7 @@ import {
   Image,
 } from "./sliderElement";
 import { carouselItem } from "../../Data";
-const Slider = () => {
+const Slider = (props) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {
     if (direction === "left") {
@@ -37,14 +37,10 @@ const Slider = () => {
         <ArrowLeftOutlinedIcon />
       </Arrow>
       <Wrapper slideIndex={slideIndex}>
-        {carouselItem.map((item) => (
+        {props.item.map((item) => (
           <Slide key={item.id}>
             <ImageContainer>
-              <InfoContainer>
-                {/* <Button>About us</Button> */}
-                {/* <Title>{item.title}</Title>
-                <Desc>{item.desc}</Desc> */}
-              </InfoContainer>
+              <InfoContainer></InfoContainer>
               <Image src={item.img} />
             </ImageContainer>
           </Slide>

@@ -4,6 +4,7 @@ import Navbar from "../../Components/Navbar";
 import Sidebar from "../../Components/Sidebar";
 import Slider from "../../Components/Slider";
 import Tab from "../../Components/Tabs";
+import { carouselItem } from "../../Data";
 
 const Homepage = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,7 +16,7 @@ const Homepage = () => {
     <div style={{ overflowX: "hidden" }}>
       <Navbar toggle={toggle} />
       <Sidebar toggle={toggle} isOpen={isOpen} />
-      <Slider />
+      <Slider item={carouselItem} />
       <Tab />
       <Footer />
     </div>

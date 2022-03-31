@@ -14,7 +14,7 @@ export const Container = styled.div`
 export const Arrow = styled.div`
   width: 50px;
   height: 50px;
-  background-color: #3c5c7e;
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
   border-radius: 50%;
   display: flex;

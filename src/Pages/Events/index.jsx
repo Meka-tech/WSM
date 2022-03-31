@@ -5,6 +5,9 @@ import Sidebar from "../../Components/Sidebar";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { mobile } from "../../responsive";
+import Slider from "../../Components/Slider";
+import { carouselItem } from "../../Data";
+import Event from "../../Components/Event";
 
 const HeaderDiv = styled.div`
   display: flex;
@@ -43,6 +46,43 @@ const Crumb = styled.p`
     color: #00adb5;
   }
 `;
+const Body = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
+const BodyHeading = styled.div`
+  margin: 50px 0px;
+  ${mobile({ margin: "25px 0px" })}
+`;
+
+const BodyHeader = styled.h1`
+  font-size: 25px;
+  color: #00adb5;
+  margin: 20px 0px;
+  ${mobile({ fontSize: "13px", margin: "5px 0px" })}
+`;
+
+const BodySubHeader = styled.h1`
+  font-size: 35px;
+  color: #152238;
+  margin: 0px 20px;
+  font-weight: 800;
+  ${mobile({ fontSize: "18px", margin: "5px 0px" })}
+`;
+const Carousel = styled.div`
+  width: 80vw;
+  padding-bottom: 25px;
+  ${mobile({ width: "90vw", paddingBottom: "60px" })}
+`;
+const EventBody = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
 
 const Events = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,6 +104,32 @@ const Events = () => {
           <Crumb> / </Crumb> <Crumb> Events</Crumb>
         </BreadCrumb>
       </HeaderDiv>
+      <Body>
+        <BodyHeading>
+          <BodyHeader>Previous Events</BodyHeader>
+          <BodySubHeader>
+            Pictures taken at previously held events
+          </BodySubHeader>
+        </BodyHeading>
+        <Carousel>
+          <Slider item={carouselItem} />
+        </Carousel>
+        <EventBody>
+          <BodyHeader>Upcoming Events</BodyHeader>
+          <BodySubHeader>
+            Be ready for our upcoming charity events
+          </BodySubHeader>
+          <Event
+            day="01-Jan-22"
+            time="8:00 - 10:00"
+            location="Enugu"
+            header=" Lorem ipsum dolor sit"
+            description=" Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor "
+            image={require("../../Images/events.jpg")}
+          />
+        </EventBody>
+      </Body>
+
       <Footer />
     </div>
   );
