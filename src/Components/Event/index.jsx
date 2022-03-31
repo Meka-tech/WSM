@@ -4,6 +4,7 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { mobile, tab } from "../../responsive";
+import { width } from "@mui/system";
 
 const Container = styled.div`
   margin-top: 30px;
@@ -35,18 +36,18 @@ const Image = styled.img`
 const Text = styled.div`
   position: relative;
   display: flex;
+
   width: 100%;
   padding: 0px 10px;
   justify-content: center;
   margin-top: 10px;
   padding-bottom: 15px;
-  ${mobile({ padding: "0px 5px", paddingBottom: "0px" })}
+  ${mobile({ padding: "0px 5px", paddingBottom: "10px" })}
 `;
 const Details = styled.div`
   padding: 0px 20px;
   width: 50%;
-
-  ${mobile({ padding: "0px 10px", width: "80%" })}
+  ${mobile({ padding: "0px 5px", width: "80%" })}
 `;
 
 const Description = styled.div`
@@ -58,7 +59,9 @@ const Description = styled.div`
 const Section = styled.div`
   padding: 10px;
   display: flex;
-  ${mobile({ padding: "2px" })}
+  align-items: center;
+
+  ${mobile({ padding: "0px" })}
 `;
 
 const Icon = styled.div`
@@ -77,7 +80,7 @@ const Header = styled.h2`
   color: #152238;
   font-weight: bold;
   font-size: 20px;
-  ${mobile({ fontSize: "15px" })}
+  ${mobile({ fontSize: "15px", marginBottom: "5px" })}
 `;
 
 const Content = styled.p`
