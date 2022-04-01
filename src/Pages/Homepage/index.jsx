@@ -16,7 +16,7 @@ const Homepage = () => {
     <div style={{ overflowX: "hidden" }}>
       <Navbar toggle={toggle} />
       <Sidebar toggle={toggle} isOpen={isOpen} />
-      <Slider item={carouselItem} />
+      <Slider item={carouselItem} amount="3" />
       <Tab />
       <Footer />
     </div>

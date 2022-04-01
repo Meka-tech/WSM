@@ -8,7 +8,7 @@ export const Container = styled.div`
   display: flex;
   position: relative;
   overflow: hidden;
-  ${mobile({ height: "40vh" })}
+  ${mobile({ height: "auto", width: "100vw" })}
   ${tab({ height: "45vh" })}
 `;
 export const Arrow = styled.div`
@@ -26,6 +26,7 @@ export const Arrow = styled.div`
   left: ${(props) => props.direction === "left" && "10px"};
   right: ${(props) => props.direction === "right" && "10px"};
   margin: auto;
+
   cursor: pointer;
   opacity: 0.5;
   z-index: 2;
@@ -35,6 +36,8 @@ export const Arrow = styled.div`
 export const Wrapper = styled.div`
   height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   transition: all 1s ease;
   transform: translateX(${(props) => props.slideIndex * -100}vw);
 `;
@@ -44,7 +47,7 @@ export const Slide = styled.div`
   width: 100vw;
   height: 90vh;
   position: relative;
-  ${mobile({ height: "60vh" })}
+  ${mobile({ height: "auto" })}
   ${tab({ height: "20vh" })}
 `;
 export const ImageContainer = styled.div`
@@ -52,11 +55,11 @@ export const ImageContainer = styled.div`
   position: relative;
 `;
 export const Image = styled.img`
-  height: 100%;
-  min-width: 100%;
+  height: auto;
+  width: 100%;
   object-fit: cover;
-  ${mobile({ height: "100%", maxWidth: "100vw" })}
-  ${tab({ height: "50%", minWidth: "100vw" })}
+  ${mobile({ height: "auto", width: "100%" })}
+  ${tab({ height: "auto", minWidth: "100%" })}
 `;
 
 export const InfoContainer = styled.div`
@@ -66,7 +69,7 @@ export const InfoContainer = styled.div`
   color: rgba(255, 255, 255, 0.8);
   display: flex;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.2);
+
   text-align: center;
   transition: all 0.2s ease;
 `;

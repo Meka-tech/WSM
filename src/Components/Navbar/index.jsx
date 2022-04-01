@@ -11,7 +11,6 @@ import {
   NavItem,
   NavLinks,
 } from "./NavbarElements";
-import "./NavBar.style.css";
 
 const Navbar = ({ toggle }) => {
   return (
@@ -19,8 +18,9 @@ const Navbar = ({ toggle }) => {
       <NavbarContainer>
         <NavLogo>
           <Link to="/">
-            <Logo className="logo" src={require("../../Images/Logo.png")} />
+            <Logo src={require("../../Images/Logo.png")} />
           </Link>
+          <h2>Widows Succour Ministry</h2>
         </NavLogo>
 
         <MobileIcon onClick={toggle}>

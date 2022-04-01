@@ -17,18 +17,18 @@ const Slider = (props) => {
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {
     if (direction === "left") {
-      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 2);
+      setSlideIndex(slideIndex > 0 ? slideIndex - 1 : props.amount - 1);
     } else {
-      setSlideIndex(slideIndex < 2 ? slideIndex + 1 : 0);
+      setSlideIndex(slideIndex < props.amount - 1 ? slideIndex + 1 : 0);
     }
   };
-  const autoSlide = () => {
-    setTimeout(handleClick("right"), 2000);
-  };
+  // const autoSlide = () => {
+  //   setTimeout(handleClick("right"), 2000);
+  // };
   useEffect(() => {
     const autoSlide = setTimeout(() => {
       handleClick("right");
-    }, 8000);
+    }, 10000);
   }, [slideIndex]);
 
   return (

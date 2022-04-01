@@ -4,7 +4,7 @@ import { tab } from "../../responsive";
 
 export const Nav = styled.nav`
   background-color: #152238f5;
-  height: 60px;
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,12 +12,12 @@ export const Nav = styled.nav`
   z-index: 10;
   font-size: 20px;
   top: 0;
-  box-shadow: 10px 10px 30px rgba(5, 5, 5, 0.5);
+  box-shadow: 5px 5px 12px rgba(5, 5, 5, 0.5);
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
-  ${mobile({ height: "50px" })}
+  ${mobile({ height: "60px" })}
 `;
 
 export const NavbarContainer = styled.div`
@@ -39,13 +39,20 @@ export const NavLogo = styled.div`
   /* margin-left: 20px; */
   ${mobile({ marginLeft: "0px" })}
   ${tab({ marginLeft: "0px" })}
+  h2 {
+    color: white;
+    font-weight: bold;
+    ${mobile({ fontSize: "12px" })}
+  }
 `;
+
 export const Logo = styled.img`
-  width: 20px;
+  width: 30px;
   height: auto;
   margin-bottom: 10%;
   transform: scale(2);
-  ${mobile({ transform: "scale(1.2)" })}
+  margin-right: 50px;
+  ${mobile({ transform: "scale(1.2)", marginRight: "20px" })}
   ${tab({ transform: "scale(1.5)" })}
 `;
 export const MobileIcon = styled.div`

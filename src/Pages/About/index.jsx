@@ -86,7 +86,7 @@ const AboutUs = () => {
       <Team>
         <Heading>Meet Our Founder</Heading>
         <ImageCard
-          name="Mrs Gertrude Onyeji"
+          name="Dr Gerty Onyeji"
           position="Founder"
           image={require("../../Images/mummy.jpg")}
         />

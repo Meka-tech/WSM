@@ -23,6 +23,7 @@ const Image = styled.img`
   margin: 0;
   object-fit: cover;
   transition: all 0.2s ease-in-out;
+  transform: scale(2);
 `;
 
 const Description = styled.div`

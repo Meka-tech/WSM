@@ -6,8 +6,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { mobile } from "../../responsive";
 import Slider from "../../Components/Slider";
-import { carouselItem } from "../../Data";
-import Event from "../../Components/Event";
+import { carouselItem, eventItem } from "../../Data";
+import Event from "../../Components/EventCard";
 
 const HeaderDiv = styled.div`
   display: flex;
@@ -73,9 +73,11 @@ const BodySubHeader = styled.h1`
   ${mobile({ fontSize: "18px", margin: "5px 0px" })}
 `;
 const Carousel = styled.div`
-  width: 80vw;
+  display: flex;
+  width: 90vw;
+  height: auto;
   padding-bottom: 25px;
-  ${mobile({ width: "90vw", paddingBottom: "60px" })}
+  ${mobile({ width: "80vw", paddingBottom: "60px" })}
 `;
 const EventBody = styled.div`
   display: flex;
@@ -112,7 +114,7 @@ const Events = () => {
           </BodySubHeader>
         </BodyHeading>
         <Carousel>
-          <Slider item={carouselItem} />
+          <Slider item={eventItem} amount="9" />
         </Carousel>
         <EventBody>
           <BodyHeader>Upcoming Events</BodyHeader>
