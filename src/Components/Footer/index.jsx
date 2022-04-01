@@ -5,6 +5,7 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 import PermContactCalendarOutlinedIcon from "@mui/icons-material/PermContactCalendarOutlined";
 import EventNoteOutlinedIcon from "@mui/icons-material/EventNoteOutlined";
+import { Link } from "react-router-dom";
 
 import {
   Container,
@@ -53,20 +54,57 @@ const Footer = () => {
             <Icon>
               <InfoOutlinedIcon />
             </Icon>{" "}
-            <Footerlink> about us</Footerlink>
+            <Footerlink>
+              <Link
+                to="/about_us"
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  fontSize: "16px",
+                }}
+              >
+                {" "}
+                About us
+              </Link>
+            </Footerlink>
           </FooterItem>
           <FooterItem>
             <Icon>
               <PermContactCalendarOutlinedIcon />
             </Icon>
-            <Footerlink>contact us</Footerlink>
+            <Footerlink>
+              {" "}
+              <Link
+                to="/contact"
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  fontSize: "16px",
+                }}
+              >
+                {" "}
+                Contact us
+              </Link>
+            </Footerlink>
           </FooterItem>
           <FooterItem>
             <Icon>
               {" "}
               <EventNoteOutlinedIcon />
             </Icon>{" "}
-            <Footerlink> Events</Footerlink>
+            <Footerlink>
+              {" "}
+              <Link
+                to="/events"
+                style={{
+                  textDecoration: "none",
+                  color: "white",
+                  fontSize: "16px",
+                }}
+              >
+                Events
+              </Link>
+            </Footerlink>
           </FooterItem>
         </PopularLinks>
       </Wrapper>
