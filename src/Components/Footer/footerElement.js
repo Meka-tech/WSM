@@ -8,7 +8,7 @@ export const Container = styled.div`
   background-color: #152239;
   width: 100vw;
   height: 40vh;
-  ${mobile({ height: "fit-content", padding: "25px 10px", marginTop: "50px" })}
+  ${mobile({ height: "fit-content", padding: "25px 10px", marginTop: "70px" })}
   ${tab({ height: "fit-content" })}
 `;
 export const Wrapper = styled.div`
@@ -58,10 +58,11 @@ export const Icon = styled.div`
 export const Footerlink = styled.div`
   font-size: 15px;
   color: white;
+  text-align: left;
 
   transition: all 0.2s ease;
   cursor: pointer;
-  ${mobile({ fontSize: "10px" })}
+  ${mobile({ fontSize: "10px", transform: "scale(0.65)" })}
   &:hover {
     color: lightblue;
     font-size: 17px;
