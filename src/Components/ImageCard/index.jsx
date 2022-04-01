@@ -14,7 +14,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   ${mobile({ width: "150px", height: " 250px" })}
-  ${tab({ width: "100px", height: " 200px" })}
+  ${tab({ width: "250px", height: " 350px" })}
 `;
 const Image = styled.img`
   position: relative;
@@ -47,6 +47,12 @@ const Description = styled.div`
     transform: "translateY(60px)",
     marginTop: "100%",
   })}
+  ${tab({
+    height: "100px",
+    padding: "10px  0px",
+    transform: "translateY(60px)",
+    marginTop: "100%",
+  })}
 `;
 const Name = styled.h2`
   margin-bottom: 10px;
@@ -54,10 +60,12 @@ const Name = styled.h2`
   font-weight: bolder;
   color: #00adb5;
   ${mobile({ fontSize: "10px", marginBottom: "0px" })}
+  ${tab({ fontSize: "14px", marginBottom: "0px" })}
 `;
 const Position = styled.h3`
   color: #152238;
   ${mobile({ fontSize: "10px" })}
+  ${tab({ fontSize: "12px" })}
 `;
 
 const ImageCard = (props) => {

@@ -9,7 +9,7 @@ export const Container = styled.div`
   position: relative;
   overflow: hidden;
   ${mobile({ height: "auto", width: "100vw" })}
-  ${tab({ height: "45vh" })}
+  ${tab({ height: "auto" })}
 `;
 export const Arrow = styled.div`
   width: 50px;
@@ -48,7 +48,7 @@ export const Slide = styled.div`
   height: 90vh;
   position: relative;
   ${mobile({ height: "auto" })}
-  ${tab({ height: "20vh" })}
+  ${tab({ height: "auto" })}
 `;
 export const ImageContainer = styled.div`
   height: 100%;
@@ -59,7 +59,7 @@ export const Image = styled.img`
   width: 100%;
   object-fit: cover;
   ${mobile({ height: "auto", width: "100%" })}
-  ${tab({ height: "auto", minWidth: "100%" })}
+  ${tab({ height: "auto", width: "100%" })}
 `;
 
 export const InfoContainer = styled.div`

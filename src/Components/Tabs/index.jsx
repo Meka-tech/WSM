@@ -72,9 +72,9 @@ const Tab = () => {
 
       <TabContainer>
         <Tabs selectedTab={activeTab} onChange={handleChange}>
-          <Tabb label="About" value={1}></Tabb>
-          <Tabb label="Mission" value={2}></Tabb>
-          <Tabb label="Vision" value={3}></Tabb>
+          <Tabb label="About" value={1} key={1}></Tabb>
+          <Tabb label="Mission" value={2} key={2}></Tabb>
+          <Tabb label="Vision" value={3} key={3}></Tabb>
         </Tabs>
       </TabContainer>
       <TabPanelContainer>

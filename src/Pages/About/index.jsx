@@ -5,7 +5,7 @@ import Sidebar from "../../Components/Sidebar";
 import Tab from "../../Components/Tabs";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { mobile } from "../../responsive";
+import { mobile, tab } from "../../responsive";
 import ImageCard from "../../Components/ImageCard";
 
 const HeaderDiv = styled.div`
@@ -53,6 +53,7 @@ const Team = styled.div`
   justify-content: center;
   align-items: center;
   ${mobile({ padding: "25px 0px" })}
+  ${tab({ padding: "15px 0px" })}
 `;
 const Heading = styled.h1`
   font-size: 30px;

@@ -12,7 +12,7 @@ export const Nav = styled.nav`
   z-index: 10;
   font-size: 20px;
   top: 0;
-  box-shadow: 5px 5px 12px rgba(5, 5, 5, 0.5);
+  box-shadow: 5px 5px 5px rgba(5, 5, 5, 0.5);
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -36,13 +36,15 @@ export const NavLogo = styled.div`
   display: flex;
   justify-items: center;
   align-items: center;
-  /* margin-left: 20px; */
+
   ${mobile({ marginLeft: "0px" })}
   ${tab({ marginLeft: "0px" })}
   h2 {
+    font-size: 25px;
     color: white;
     font-weight: bold;
     ${mobile({ fontSize: "12px" })}
+    ${tab({ fontSize: "20px" })}
   }
 `;
 
@@ -78,18 +80,17 @@ export const NavMenu = styled.ul`
     display: none;
   } ;
 `;
-export const NavItem = styled.li`
-  height: 35px;
-  text-decoration: none;
-`;
+// export const NavItem = styled.li`
+//   height: 35px;
+//   text-decoration: none;
+// `;
 
-export const NavLinks = styled.a`
+export const NavItem = styled.li`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
-  margin: 0 1rem;
-  height: 100%;
+  padding: 0.5rem 0.8rem;
+  margin: 0.5rem 0.8rem;
   cursor: pointer;
   color: white;
   font-size: 14px;
@@ -99,7 +100,7 @@ export const NavLinks = styled.a`
   &.active {
   }
   &:hover {
-    background-color: white;
+    background-color: #87ceeb;
     border-radius: 5px;
     color: #3c5c7e;
   }

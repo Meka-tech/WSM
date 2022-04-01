@@ -2,14 +2,14 @@ import { css } from "styled-components";
 
 export const mobile = (props) => {
   return css`
-    @media only screen and (max-width: 425px) {
+    @media only screen and (max-width: 500px) {
       ${props}
     }
   `;
 };
 export const tab = (props) => {
   return css`
-    @media only screen and (max-width: 768px) and (min-width: none) {
+    @media only screen and (max-width: 768px) and (min-width: 502px) {
       ${props}
     }
   `;

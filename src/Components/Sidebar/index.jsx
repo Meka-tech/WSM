@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import {
   CloseIcon,
   Icon,
+  NavItem,
   SidebarContainer,
   SidebarLink,
   SidebarMenu,
@@ -17,31 +18,65 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <Link to="/" style={{ textDecoration: "none" }} onClick={toggle}>
-            <SidebarLink> Home</SidebarLink>{" "}
-          </Link>
+          <NavItem>
+            {" "}
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontWeight: "600",
+              }}
+              onClick={toggle}
+            >
+              Home
+            </Link>{" "}
+            {/* <SidebarLink> Home</SidebarLink>{" "} */}
+          </NavItem>
+          <NavItem>
+            <Link
+              to="/events"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontWeight: "600",
+              }}
+              onClick={toggle}
+            >
+              Events
+            </Link>
+            {/* <SidebarLink> Events</SidebarLink>{" "} */}
+          </NavItem>
+          <NavItem>
+            <Link
+              to="/about_us"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontWeight: "600",
+              }}
+              onClick={toggle}
+            >
+              About Us
+            </Link>
+            {/* <SidebarLink> About Us</SidebarLink>{" "} */}
+          </NavItem>
+          <NavItem>
+            <Link
+              to="/contact"
+              style={{
+                textDecoration: "none",
+                color: "white",
+                fontWeight: "600",
+              }}
+              onClick={toggle}
+            >
+              {" "}
+              Contacts
+            </Link>
+            {/* <SidebarLink> Contacts</SidebarLink>{" "} */}
+          </NavItem>
 
-          <Link
-            to="/events"
-            style={{ textDecoration: "none" }}
-            onClick={toggle}
-          >
-            <SidebarLink> Events</SidebarLink>{" "}
-          </Link>
-          <Link
-            to="/about_us"
-            style={{ textDecoration: "none" }}
-            onClick={toggle}
-          >
-            <SidebarLink> About Us</SidebarLink>{" "}
-          </Link>
-          <Link
-            to="/contact"
-            style={{ textDecoration: "none" }}
-            onClick={toggle}
-          >
-            <SidebarLink> Contacts</SidebarLink>{" "}
-          </Link>
           {/* <Link
             to="/location"
             style={{ textDecoration: "none" }}

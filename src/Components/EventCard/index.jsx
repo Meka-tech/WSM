@@ -4,8 +4,6 @@ import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
 import ScheduleIcon from "@mui/icons-material/Schedule";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import { mobile, tab } from "../../responsive";
-import { width } from "@mui/system";
-
 const Container = styled.div`
   margin-top: 30px;
 

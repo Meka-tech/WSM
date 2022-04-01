@@ -70,7 +70,6 @@ const Footer = () => {
           </FooterItem>
         </PopularLinks>
       </Wrapper>
-      {/* <HR /> */}
     </Container>
   );
 };

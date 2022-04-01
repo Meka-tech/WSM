@@ -60,3 +60,4 @@ export const SidebarLink = styled.a`
   ${tab({ fontSize: "25px" })}
   ${mobile({ fontSize: "16px" })}
 `;
+export const NavItem = styled.li``;

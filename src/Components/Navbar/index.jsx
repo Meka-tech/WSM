@@ -29,26 +29,52 @@ const Navbar = ({ toggle }) => {
 
         <NavMenu>
           <NavItem>
-            <Link to="/" style={{ textDecoration: "none" }}>
-              <NavLinks> Home </NavLinks>{" "}
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                fontWeight: "600",
+                color: "inherit",
+              }}
+            >
+              Home
+            </Link>
+            {/* <NavLinks> Home </NavLinks>{" "} */}
+          </NavItem>
+          <NavItem>
+            <Link
+              to="/events"
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                fontWeight: "600",
+              }}
+            >
+              Events
             </Link>
           </NavItem>
           <NavItem>
-            <Link to="/events" style={{ textDecoration: "none" }}>
-              {" "}
-              <NavLinks> Events </NavLinks>{" "}
+            <Link
+              to="/about_us"
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                fontWeight: "600",
+              }}
+            >
+              About Us
             </Link>
           </NavItem>
           <NavItem>
-            <Link to="/about_us" style={{ textDecoration: "none" }}>
-              {" "}
-              <NavLinks> About Us </NavLinks>{" "}
-            </Link>
-          </NavItem>
-          <NavItem>
-            <Link to="/contact" style={{ textDecoration: "none" }}>
-              {" "}
-              <NavLinks> Contact Us </NavLinks>{" "}
+            <Link
+              to="/contact"
+              style={{
+                textDecoration: "none",
+                color: "inherit",
+                fontWeight: "600",
+              }}
+            >
+              Contact Us
             </Link>
           </NavItem>
           {/* <NavItem>

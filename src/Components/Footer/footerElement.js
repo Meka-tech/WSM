@@ -9,24 +9,27 @@ export const Container = styled.div`
   width: 100vw;
   height: 40vh;
   ${mobile({ height: "fit-content", padding: "25px 10px", marginTop: "50px" })}
+  ${tab({ height: "fit-content" })}
 `;
 export const Wrapper = styled.div`
   display: flex;
   padding: 25px 100px;
   ${mobile({ flexDirection: "column", padding: "0" })}
+  ${tab({ flexDirection: "column", padding: "0" })}
 `;
 
 export const Information = styled.div`
   margin: 0 30px;
   flex: 2;
   align-content: flex-start;
+  ${mobile({ margin: " 0px 10px" })}
 `;
 
 export const PopularLinks = styled.div`
   align-content: flex-end;
   margin: 0 20px;
   flex: 1;
-  ${mobile({ margin: " 0px 30px" })}
+  ${mobile({ margin: " 0px 10px" })}
 `;
 export const FooterItem = styled.div`
   display: flex;
