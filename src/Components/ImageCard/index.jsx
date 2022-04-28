@@ -10,11 +10,20 @@ const Container = styled.div`
   background-color: none;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
   justify-content: center;
   align-items: center;
+
   ${mobile({ width: "150px", height: " 250px" })}
   ${tab({ width: "250px", height: " 350px" })}
+`;
+const Picture = styled.div`
+  position: absolute;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+
+  transition: all 0.2s ease-in-out;
 `;
 const Image = styled.img`
   position: relative;
@@ -29,28 +38,23 @@ const Image = styled.img`
 const Description = styled.div`
   margin: 0;
   padding: 10px 5px;
-  position: absolute;
+  position: relative;
   width: 85%;
   height: 200px;
   margin-top: 100%;
-  transform: translateY(110px);
   background-color: #ffffff;
   transition: all 0.3s ease-in-out;
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 1;
-  &:hover {
-    transform: translateY(65px);
-  }
+
   ${mobile({
-    height: "100px",
+    height: "50px",
     padding: "10px  0px",
-    transform: "translateY(60px)",
-    marginTop: "100%",
+    marginTop: "130%",
   })}
   ${tab({
     height: "100px",
     padding: "10px  0px",
-    transform: "translateY(60px)",
     marginTop: "100%",
   })}
 `;
@@ -71,7 +75,10 @@ const Position = styled.h3`
 const ImageCard = (props) => {
   return (
     <Container>
-      <Image alt="team" src={props.image} />
+      <Picture>
+        {" "}
+        <Image alt="team" src={props.image} />{" "}
+      </Picture>
 
       <Description>
         <Name>{props.name}</Name>

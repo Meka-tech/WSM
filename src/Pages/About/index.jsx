@@ -35,11 +35,12 @@ const BreadCrumb = styled.div`
   align-items: center;
 `;
 const Crumb = styled.p`
+  margin: 0px 10px;
   font-size: 20px;
   font-weight: 600;
   color: white;
   cursor: pointer;
-  ${mobile({ fontSize: "16px" })}
+  ${mobile({ fontSize: "16px", margin: "0px 2.5px" })}
 
   &:hover {
     color: #00adb5;
